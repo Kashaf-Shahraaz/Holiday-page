@@ -110,32 +110,25 @@ header {
     color: black;
 }
 
-.carousel-item::after, .carousel-item::before {
+.sl-btn  {
     /* display: none; */
     opacity: 0.6;
-}
-/* 
-.carousel-item:hover ~ .carousel-item::after {
-    display: inline-block;
-    color: red;
-} */
-
-.carousel-item::after {
-    content: "🢀";
     position: absolute;
     color: var(--yellow);
     font-weight: 900;
     font-size: 1.5em;
+}
+
+/* .carousel-item:hover ~ .sl-btn {
+    opacity: 1;
+} */
+
+.left-btn {
     left: calc(20% - 200px);
     z-index: 1;
 }
 
-.carousel-item::before {
-    content: "🢂";
-    position: absolute;
-    color: var(--yellow);
-    font-weight: 900;
-    font-size: 1.5em;
+.right-btn { 
     right: calc(20% - 200px);
 }
 
