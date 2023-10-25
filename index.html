@@ -52,22 +52,40 @@
                 </div>
                 <div class="main-card">
                     <form action="">
-                        <select name="hotel" id="hotel">
-                            <option value="">--Select Hotel--</option>
-                            <option value="Shangri-La">Shangri-La</option>
-                            <option value="Chatrium">Chatrium</option>
-                            <option value="Four Season">Four Season</option>
-                            <option value="Hilton">Hilton</option>
+                        <select name="hotel" id="hotel" class="select">
+                            <option value=""> --Select Hotel--</option>
+                            <option value="Shangri-La"> Shangri-La</option>
+                            <option value="Chatrium"> Chatrium</option>
+                            <option value="Four Season"> Four Season</option>
+                            <option value="Hilton"> Hilton</option>
                         </select>
-                        <input type="date" name="date-in" id="datead">
+                        <div class="date-in-wrap date-wrap"> 
+                            <input type="text" name="date-in" id="date-in" class="data" placeholder=" check-in Date">
+                            <label for="check-in"><ion-icon name="calendar-outline"></ion-icon></label>
+                        </div>
+                        <div class="date-out-wrap date-wrap"> 
+                            <input type="text" name="date-out" id="date-out" class="data" placeholder=" check-out Date">
+                        <label for="check-out"><ion-icon name="calendar-outline"></ion-icon></label>
+                        </div>
+                        <select name="guests" id="guests" class="selcet">
+                            <option value="">--Guests--</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5+</option>
+                        </select>
                     </form>
+                </div>
+                <div class="footer-card">
+                    <button>Check now</button>
                 </div>
             </div>
             <div class="card card2">
                 <div class="img-bg"></div>
                 <div class="footer-card">
-                    <p>Paris</p>
-                    <p>$4,200</p>
+                    <p>New yourk</p>
+                    <p>$6,600</p>
                 </div>
             </div>
             <div class="card card3">
@@ -81,5 +99,9 @@
 
     </div>
 
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
