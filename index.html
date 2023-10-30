@@ -13,7 +13,7 @@
                 <h2 class="logo">Holiday</h2>
                 <ul class="header-list">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="/about.html">About</a></li>
                     <li><a href="#">Ours tours</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -48,107 +48,194 @@
             </div> 
         </div>
 
-        <section class="add-inf">
-            <div class="card card1">
+        <section class="main-section" >
+            <div class="add-inf">
+                <div class="card card1">
 
-                <div class="header-card">
-                    <ul class="nav-card">
-                        <li>
-                            <a href="#hotel">hotel</a>
-                        </li>
-                        <li>
-                            <a href="#car">car rental</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="main-card">
-                    <span id="hotel"></span>
-                    <span id="cotel"></span>
-                   <div  class="hotel content-card">
-                        <form action="" class="hotel-form">
-                            <div class="form-content">
-                                <select name="select-hotel" id="select-hotel" class="select">
-                                    <option value=""> --Select Hotel--</option>
-                                    <option value="Shangri-La"> Shangri-La</option>
-                                    <option value="Chatrium"> Chatrium</option>
-                                    <option value="Four Season"> Four Season</option>
-                                    <option value="Hilton"> Hilton</option>
-                                </select>
-                                <div class="date-in-wrap date-wrap"> 
-                                    <input type="text" name="date-in" id="date-in" class="data date-in" placeholder=" check-in Date">
-                                    <label for="check-in"><ion-icon name="calendar-outline"></ion-icon></label>
-                                </div>
-                                <div class="date-out-wrap date-wrap"> 
-                                    <input type="text" name="date-out" id="date-out" class="data check-out" placeholder=" check-out Date">
-                                <label for="check-out"><ion-icon name="calendar-outline"></ion-icon></label>
-                                </div>
-                                <select name="guests" id="guests" class="selcet">
-                                    <option value="">--Guests--</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5+</option>
-                                </select>
-                            </div>
-                            <div class="form-footer">
-                                <button>Check now</button>
-                            </div>
-                        </form>
-                   </div>
-                  
-                   <div class="car content-card">
-                        <form action="" class="car-form">
-                            <div class="form-content">
-                                <select name="select-car" id="select-car" class="select">
-                                    <option value=""> --Select Model--</option>
-                                    <option value="Shangri-La"> BMW</option>
-                                    <option value="Chatrium"> Mercedes-Benz</option>
-                                    <option value="Four Season"> Tayota</option>
-                                    <option value="Hilton"> Honda</option>
-                                </select>
-                                <div class="pickup-wrap date-wrap"> 
-                                    <input type="text" name="pickup" id="pickup" class="data pickup" placeholder=" Pickup Date">
-                                    <label for="pickup"><ion-icon name="calendar-outline"></ion-icon></label>
-                                </div>
-                                <div class="return-wrap date-wrap"> 
-                                    <input type="text" name="return" id="return" class="data return" placeholder=" Return Date">
-                                <label for="return"><ion-icon name="calendar-outline"></ion-icon></label>
-                                </div>
-                                <select name="guests" id="guests" class="selcet">
-                                    <option value="">--Options--</option>
-                                    <option value="child-seat">Child Seat</option>
-                                    <option value="gps">GPS Navigator</option>
-                                    <option value="Insurance">Insurance</option>
-                                </select>
-                            </div>
-                            <div class="form-footer">
-                                <button>Check now</button>
-                            </div>
-                        </form>
+                    <div class="header-card">
+                        <ul class="nav-card">
+                            <li>
+                                <a href="#hotel">hotel</a>
+                            </li>
+                            <li>
+                                <a href="#car">car rental</a>
+                            </li>
+                        </ul>
                     </div>
-
+    
+                    <div class="main-card">
+                        <span id="hotel"></span>
+                        <span id="car"></span>
+                       <div  class="hotel content-card">
+                            <form action="" class="hotel-form">
+                                <div class="form-content">
+                                    <select name="select-hotel" id="select-hotel" class="select">
+                                        <option value=""> --Select Hotel--</option>
+                                        <option value="Shangri-La"> Shangri-La</option>
+                                        <option value="Chatrium"> Chatrium</option>
+                                        <option value="Four Season"> Four Season</option>
+                                        <option value="Hilton"> Hilton</option>
+                                    </select>
+                                    <div class="date-in-wrap date-wrap"> 
+                                        <input type="text" name="date-in" id="date-in" class="data date-in" placeholder=" check-in Date">
+                                        <label for="check-in"><ion-icon name="calendar-outline"></ion-icon></label>
+                                    </div>
+                                    <div class="date-out-wrap date-wrap"> 
+                                        <input type="text" name="date-out" id="date-out" class="data check-out" placeholder=" check-out Date">
+                                    <label for="check-out"><ion-icon name="calendar-outline"></ion-icon></label>
+                                    </div>
+                                    <select name="guests" id="guests" class="selcet">
+                                        <option value="">--Guests--</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5+</option>
+                                    </select>
+                                </div>
+                                <div class="form-footer">
+                                    <button>Check now</button>
+                                </div>
+                            </form>
+                       </div>
+                      
+                       <div class="car content-card">
+                            <form action="" class="car-form">
+                                <div class="form-content">
+                                    <select name="select-car" id="select-car" class="select">
+                                        <option value=""> --Select Model--</option>
+                                        <option value="Shangri-La"> BMW</option>
+                                        <option value="Chatrium"> Mercedes-Benz</option>
+                                        <option value="Four Season"> Tayota</option>
+                                        <option value="Hilton"> Honda</option>
+                                    </select>
+                                    <div class="pickup-wrap date-wrap"> 
+                                        <input type="text" name="pickup" id="pickup" class="data pickup" placeholder=" Pickup Date">
+                                        <label for="pickup"><ion-icon name="calendar-outline"></ion-icon></label>
+                                    </div>
+                                    <div class="return-wrap date-wrap"> 
+                                        <input type="text" name="return" id="return" class="data return" placeholder=" Return Date">
+                                    <label for="return"><ion-icon name="calendar-outline"></ion-icon></label>
+                                    </div>
+                                    <select name="guests" id="guests" class="selcet">
+                                        <option value="">--Options--</option>
+                                        <option value="child-seat">Child Seat</option>
+                                        <option value="gps">GPS Navigator</option>
+                                        <option value="Insurance">Insurance</option>
+                                    </select>
+                                </div>
+                                <div class="form-footer">
+                                    <button>Check now</button>
+                                </div>
+                            </form>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="card card2">
+                    <div class="img-bg"></div>
+                    <div class="footer-card">
+                        <p>New yourk</p>
+                        <p>$6,600</p>
+                    </div>
+                </div>
+    
+                <div class="card card3">
+                    <div class="img-bg"></div>
+                    <div class="footer-card">
+                        <p>Paris</p>
+                        <p>$4,200</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="card card2">
-                <div class="img-bg"></div>
-                <div class="footer-card">
-                    <p>New yourk</p>
-                    <p>$6,600</p>
-                </div>
-            </div>
-
-            <div class="card card3">
-                <div class="img-bg"></div>
-                <div class="footer-card">
-                    <p>Paris</p>
-                    <p>$4,200</p>
-                </div>
-            </div>
+           
         </section>
 
+        <section class="travel">
+            <div class="travel-heading">
+                <div class="line left-line"></div>
+                <div class="middle-line">
+                    <p>LOREM IPSUM DOLOR</p>
+                </div>
+                <div class="line right-line"></div>
+            </div>
+
+            <div class="trevel-cards">
+                <div class="trevel-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1602521879061-527d8d2e2a3d?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGJyaWRnZXxlbnwwfHwwfHx8MA%3D%3D" alt="bridge">
+                    </figure>
+                    <figcaption>
+                        <p>Proin gravida nibhvel lorem quis bind</p>
+                    </figcaption>
+                    <div class="date-travel">
+                        <p>26 march 2016</p>
+                    </div>
+                    <div class="card-links">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="descr"><a href="#">TREVEL</a></div>
+                        <div class="comment"><ion-icon name="create-outline"></ion-icon></div>
+                    </div>
+                </div>
+               
+                <div class="trevel-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1525197134674-4c3f02da2745?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGRlc2VydHxlbnwwfHwwfHx8MA%3D%3D" alt="desert">
+                    </figure>
+                    <figcaption>
+                        <p>Proin gravida nibhvel lorem quis bind</p>
+                    </figcaption>
+                    <div class="date-travel">
+                        <p>26 march 2016</p>
+                    </div>
+                    <div class="card-links">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="descr"><a href="#">TREVEL</a></div>
+                        <div class="comment"><ion-icon name="create-outline"></ion-icon></div>
+                    </div>
+                </div>
+               
+                <div class="trevel-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1679242780222-263b8927c8c1?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJhaWx3YXklMjB0cmFja3xlbnwwfHwwfHx8MA%3D%3D" alt="railway">
+                    </figure>
+                    <figcaption>
+                        <p>Proin gravida nibhvel lorem quis bind</p>
+                    </figcaption>
+                    <div class="date-travel">
+                        <p>26 march 2016</p>
+                    </div>
+                    <div class="card-links">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="descr"><a href="#">TREVEL</a></div>
+                        <div class="comment"><ion-icon name="create-outline"></ion-icon></div>
+                    </div>
+                </div>
+                
+                <div class="trevel-card">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG91cyUyMGluJTIwZ2FyZGVufGVufDB8fDB8fHww" alt="hous">
+                    </figure>
+                    <figcaption>
+                        <p>Proin gravida nibhvel lorem quis bind</p>
+                    </figcaption>
+                    <div class="date-travel">
+                        <p>26 march 2016</p>
+                    </div>
+                    <div class="card-links">
+                        <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
+                        <div class="descr"><a href="#">TREVEL</a></div>
+                        <div class="comment"><ion-icon name="create-outline"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+            <div class="travel-footer">
+                <p class="trev-foot-text">Holiday is free Bootstrap v3.3.5 responsive template for tour and travel websites. You can download and use this layout for any purpose. You do not need to provide a credit link to us. If you have any question, feel free to <a href="#">contact us</a>. Credit goes to <a href="#">Unspash</a> for images used in this template.
+
+                </p>
+            </div>
+        </section>
     </div>
 
 
