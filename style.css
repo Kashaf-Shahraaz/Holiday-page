@@ -10,6 +10,7 @@ body {
     width: 100vw;
     height: 100vh;
     --yellow: #fcdd44;
+    font-family:  'Open Sans', sans-serif;
 }
 
 .container {
@@ -363,20 +364,20 @@ label {
     gap: 2vh;
  }
 
- .travel-heading {
+ .travel-heading, .popular-heading {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 6vh;
  }
 
- .line {
+.line {
     width: 22vh;
     height: 2px;
     background-color: #b0b0b0;
  }
 
- .middle-line {
+.middle-line {
     text-transform: uppercase;
     color: #363636;
     font-size: 2.5em;
@@ -430,12 +431,15 @@ label {
     padding: 0 2vw;
  }
 
+ .trevel-card .card-links {
+    height: 20vh;
+ }
+
  .card-links {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 20vh;
     border-top: 1px solid gray;
  }
 
@@ -458,6 +462,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.5em;
  }
 
  .travel-footer {
@@ -471,4 +476,83 @@ label {
 
  .trev-foot-text a {
     color: #9ebad2;
+ }
+
+ .popular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .popular-heading {
+    padding-top: 8vh;
+ }
+
+ .popular-heading .line {
+    width: 40vh;
+ }
+
+ .popular-heading .middle-line {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 20vw;
+    text-transform: uppercase;
+    color: #363636;
+    font-size: 2.5em;
+    padding: 0 15vw;
+ }
+
+ .popular-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+    width: 80%;
+    padding-bottom: 8vh;
+ }
+
+ .popular-card {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    grid-template-rows: 3fr 1fr;
+    height: 26vh;
+    border: 1px solid gray;
+ }
+
+ .popular-card figure {
+    grid-row: 1 / 3;
+    width: 100%;
+    height: 100%;
+ }
+
+ .popular-card img {
+    width: 100%;
+    height: 100%;
+ }
+
+ .popular-card figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2vw;
+ }
+
+ .popular-card .card-links {
+    height: 7vh;
+    align-self: self-end;
+ }
+
+
+ .footer {
+    height: 7vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
