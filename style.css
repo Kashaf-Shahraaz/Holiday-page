@@ -10,6 +10,7 @@ body {
     width: 100vw;
     height: 100vh;
     --yellow: #fcdd44;
+    font-family:  'Open Sans', sans-serif;
 }
 
 .container {
@@ -547,5 +548,11 @@ label {
 
 
  .footer {
-    
+    height: 7vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
