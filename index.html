@@ -8,7 +8,7 @@
 </head>
 <body>
    <div class="container">
-        <header>
+        <header id="home">
             <nav class="header-nav">
                 <h2 class="logo">Holiday</h2>
                 <ul class="header-list">
@@ -50,23 +50,12 @@
 
         <section class="main-section" >
             <div class="add-inf">
-                <div class="card card1">
 
-                    <div class="header-card">
-                        <ul class="nav-card">
-                            <li>
-                                <a href="#hotel">hotel</a>
-                            </li>
-                            <li>
-                                <a href="#car">car rental</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="main-card">
-                        <span id="hotel"></span>
-                        <span id="car"></span>
-                       <div  class="hotel content-card">
+                <div class="tabs">
+                    <div class="tab">
+                        <input type="radio" name="tab" id="tab1" checked>
+                        <label for="tab1">Hotel</label>
+                        <div class="tab-content">
                             <form action="" class="hotel-form">
                                 <div class="form-content">
                                     <select name="select-hotel" id="select-hotel" class="select">
@@ -82,7 +71,7 @@
                                     </div>
                                     <div class="date-out-wrap date-wrap"> 
                                         <input type="text" name="date-out" id="date-out" class="data check-out" placeholder=" check-out Date">
-                                    <label for="check-out"><ion-icon name="calendar-outline"></ion-icon></label>
+                                        <label for="check-out"><ion-icon name="calendar-outline"></ion-icon></label>
                                     </div>
                                     <select name="guests" id="guests" class="selcet">
                                         <option value="">--Guests--</option>
@@ -97,9 +86,13 @@
                                     <button>Check now</button>
                                 </div>
                             </form>
-                       </div>
-                      
-                       <div class="car content-card">
+                        </div>
+                    </div>
+                    
+                    <div class="tab">
+                        <input type="radio" name="tab" id="tab2" checked>
+                        <label for="tab2">Rent car</label>
+                        <div class="tab-content">
                             <form action="" class="car-form">
                                 <div class="form-content">
                                     <select name="select-car" id="select-car" class="select">
@@ -129,7 +122,6 @@
                                 </div>
                             </form>
                         </div>
-    
                     </div>
                 </div>
     
@@ -174,7 +166,7 @@
                     </div>
                     <div class="card-links">
                         <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
-                        <div class="descr"><a href="#">TREVEL</a></div>
+                        <div class="descr"><a href="#home">TREVEL</a></div>
                         <div class="comment"><ion-icon name="create-outline"></ion-icon></div>
                     </div>
                 </div>
@@ -191,7 +183,7 @@
                     </div>
                     <div class="card-links">
                         <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
-                        <div class="descr"><a href="#">TREVEL</a></div>
+                        <div class="descr"><a href="#home">TREVEL</a></div>
                         <div class="comment"><ion-icon name="create-outline"></ion-icon></div>
                     </div>
                 </div>
@@ -208,7 +200,7 @@
                     </div>
                     <div class="card-links">
                         <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
-                        <div class="descr"><a href="#">TREVEL</a></div>
+                        <div class="descr"><a href="#home">TREVEL</a></div>
                         <div class="comment"><ion-icon name="create-outline"></ion-icon></div>
                     </div>
                 </div>
@@ -225,7 +217,7 @@
                     </div>
                     <div class="card-links">
                         <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
-                        <div class="descr"><a href="#">TREVEL</a></div>
+                        <div class="descr"><a href="#home">TREVEL</a></div>
                         <div class="comment"><ion-icon name="create-outline"></ion-icon></div>
                     </div>
                 </div>
@@ -256,7 +248,7 @@
                     </figcaption>
                     <div class="card-links">
                         <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
-                        <div class="descr"><a href="#">TREVEL</a></div>
+                        <div class="descr"><a href="#home">TREVEL</a></div>
                         <div class="comment"><ion-icon name="create-outline"></ion-icon></div>
                     </div>
                 </div>
@@ -269,7 +261,7 @@
                     </figcaption>
                     <div class="card-links">
                         <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
-                        <div class="descr"><a href="#">TREVEL</a></div>
+                        <div class="descr"><a href="#home">TREVEL</a></div>
                         <div class="comment"><ion-icon name="create-outline"></ion-icon></div>
                     </div>
                 </div>
@@ -282,7 +274,7 @@
                     </figcaption>
                     <div class="card-links">
                         <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
-                        <div class="descr"><a href="#">TREVEL</a></div>
+                        <div class="descr"><a href="#home">TREVEL</a></div>
                         <div class="comment"><ion-icon name="create-outline"></ion-icon></div>
                     </div>
                 </div>
@@ -295,7 +287,7 @@
                     </figcaption>
                     <div class="card-links">
                         <div class="like"><ion-icon name="heart-outline"></ion-icon></div>
-                        <div class="descr"><a href="#">TREVEL</a></div>
+                        <div class="descr"><a href="#home">TREVEL</a></div>
                         <div class="comment"><ion-icon name="create-outline"></ion-icon></div>
                     </div>
                 </div>
