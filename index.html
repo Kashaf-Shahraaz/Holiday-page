@@ -24,6 +24,7 @@
             <span id="slide1"></span>
             <span id="slide2"></span>
             <span id="slide3"></span>
+
             <div class="carousel-item slide1">
                 <h1>Lorem <span class="ch-color">ipsum</span> dolor</h1>
                 <p>Wonderfrul destinations</p>
@@ -49,41 +50,88 @@
 
         <section class="add-inf">
             <div class="card card1">
+
                 <div class="header-card">
-                    <a href="#" class="hotel">hotel</a>
-                    <a href="#" class="rental-car">car rental</a>
+                    <ul class="nav-card">
+                        <li>
+                            <a href="#hotel">hotel</a>
+                        </li>
+                        <li>
+                            <a href="#car">car rental</a>
+                        </li>
+                    </ul>
                 </div>
+
                 <div class="main-card">
-                    <form action="">
-                        <select name="hotel" id="hotel" class="select">
-                            <option value=""> --Select Hotel--</option>
-                            <option value="Shangri-La"> Shangri-La</option>
-                            <option value="Chatrium"> Chatrium</option>
-                            <option value="Four Season"> Four Season</option>
-                            <option value="Hilton"> Hilton</option>
-                        </select>
-                        <div class="date-in-wrap date-wrap"> 
-                            <input type="text" name="date-in" id="date-in" class="data" placeholder=" check-in Date">
-                            <label for="check-in"><ion-icon name="calendar-outline"></ion-icon></label>
-                        </div>
-                        <div class="date-out-wrap date-wrap"> 
-                            <input type="text" name="date-out" id="date-out" class="data" placeholder=" check-out Date">
-                        <label for="check-out"><ion-icon name="calendar-outline"></ion-icon></label>
-                        </div>
-                        <select name="guests" id="guests" class="selcet">
-                            <option value="">--Guests--</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5+</option>
-                        </select>
-                    </form>
-                </div>
-                <div class="footer-card">
-                    <button>Check now</button>
+                    <span id="hotel"></span>
+                    <span id="cotel"></span>
+                   <div  class="hotel content-card">
+                        <form action="" class="hotel-form">
+                            <div class="form-content">
+                                <select name="select-hotel" id="select-hotel" class="select">
+                                    <option value=""> --Select Hotel--</option>
+                                    <option value="Shangri-La"> Shangri-La</option>
+                                    <option value="Chatrium"> Chatrium</option>
+                                    <option value="Four Season"> Four Season</option>
+                                    <option value="Hilton"> Hilton</option>
+                                </select>
+                                <div class="date-in-wrap date-wrap"> 
+                                    <input type="text" name="date-in" id="date-in" class="data date-in" placeholder=" check-in Date">
+                                    <label for="check-in"><ion-icon name="calendar-outline"></ion-icon></label>
+                                </div>
+                                <div class="date-out-wrap date-wrap"> 
+                                    <input type="text" name="date-out" id="date-out" class="data check-out" placeholder=" check-out Date">
+                                <label for="check-out"><ion-icon name="calendar-outline"></ion-icon></label>
+                                </div>
+                                <select name="guests" id="guests" class="selcet">
+                                    <option value="">--Guests--</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5+</option>
+                                </select>
+                            </div>
+                            <div class="form-footer">
+                                <button>Check now</button>
+                            </div>
+                        </form>
+                   </div>
+                  
+                   <div class="car content-card">
+                        <form action="" class="car-form">
+                            <div class="form-content">
+                                <select name="select-car" id="select-car" class="select">
+                                    <option value=""> --Select Model--</option>
+                                    <option value="Shangri-La"> BMW</option>
+                                    <option value="Chatrium"> Mercedes-Benz</option>
+                                    <option value="Four Season"> Tayota</option>
+                                    <option value="Hilton"> Honda</option>
+                                </select>
+                                <div class="pickup-wrap date-wrap"> 
+                                    <input type="text" name="pickup" id="pickup" class="data pickup" placeholder=" Pickup Date">
+                                    <label for="pickup"><ion-icon name="calendar-outline"></ion-icon></label>
+                                </div>
+                                <div class="return-wrap date-wrap"> 
+                                    <input type="text" name="return" id="return" class="data return" placeholder=" Return Date">
+                                <label for="return"><ion-icon name="calendar-outline"></ion-icon></label>
+                                </div>
+                                <select name="guests" id="guests" class="selcet">
+                                    <option value="">--Options--</option>
+                                    <option value="child-seat">Child Seat</option>
+                                    <option value="gps">GPS Navigator</option>
+                                    <option value="Insurance">Insurance</option>
+                                </select>
+                            </div>
+                            <div class="form-footer">
+                                <button>Check now</button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
             </div>
+
             <div class="card card2">
                 <div class="img-bg"></div>
                 <div class="footer-card">
@@ -91,6 +139,7 @@
                     <p>$6,600</p>
                 </div>
             </div>
+
             <div class="card card3">
                 <div class="img-bg"></div>
                 <div class="footer-card">

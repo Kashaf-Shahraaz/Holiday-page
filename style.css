@@ -111,17 +111,15 @@ header {
 
 .slide2 {
     background-image: url(https://images.unsplash.com/photo-1533984899405-a7d715bac484?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    /* display: none; */
 }
 
 .slide3 {
     background-image: url(https://images.unsplash.com/photo-1572202651953-e9be244dcdc8?auto=format&fit=crop&q=80&w=2188&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    /* display: none; */
 }
 
-*:target ~ .slide1 {
+/* * :target ~ .slide1 {
     opacity: 0;
-}
+} */
 
 #slide1:target ~ .slide1 {
     opacity: 1;
@@ -178,7 +176,7 @@ header {
 
 .add-inf {
     width: 80%;
-    height: 50vh;
+    height: 52vh;
     display: flex;
     gap: 5vw;
     position: relative;
@@ -191,7 +189,7 @@ header {
     height: 90%;
 }
 
-.img-bg {
+ .img-bg {
     height: 80%;
     background-size: cover;
 }
@@ -204,8 +202,32 @@ header {
     background-image: url(https://plus.unsplash.com/premium_photo-1668967516060-624b8a7021f4?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXV0dW1ufGVufDB8fDB8fHww);
 }
 
+.card .footer-card {
+    height: 20%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.card2 .footer-card {
+    background-color: #24be64;
+}
+
+.card3 .footer-card {
+    background-color: #eb5b4d;
+}
+
+
 .header-card {
     height: 16%;
+}
+
+.nav-card {
+    height: 100%;
+    width: 100%;
     background-color: #f3c70f;
     display: flex;
     justify-content: space-around;
@@ -215,39 +237,65 @@ header {
     font-weight: bold;
 }
 
-.header-card:hover {
-    background-color: #e9d99a;
-}
-
-.header-card a {
-    color: black;
-    width: 50%;
+.nav-card li, .nav-card li a {
     height: 100%;
     display: flex;
     align-items:center;
     justify-content: center;
 }
 
-.header-card a:focus {
-    background-color: white;
+.nav-card li {
+    width: 50%;
 }
 
-.hotel {
+.nav-card li a {
+   width: 100%;
+   color: black;
+}
+
+.nav-card li a:hover {
+    background-color: #e9d99a;
+}
+
+.nav-card li > a:focus {
     background-color: white;
 }
 
 .main-card {
-    height: 64%;
+    height: 84%;
     background-color: white;
+    position: relative;
 }
 
-form {
+.content-card, form {
     height: 100%;
+}
+
+.content-card, form, .form-content, .form-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    width: 100%;
+}
+
+form {
+    position: absolute;
+    top: 0;
+}
+
+.form-content {
+    position: absolute;
+    top: 0;
+    height: 76%;
+    gap: 28px;
+}
+
+.form-footer {
+    position: absolute;
+    bottom: 0;
+    height: 24%;
+    background-color: #f3c70f;
 }
 
 .date-wrap {
@@ -265,33 +313,41 @@ input {
     height: 30px;
 }
 
+input:focus, select:focus {
+    outline: 2px solid #e9d99a;;
+}
+
 label {
     position: absolute;
     height: 30px;
     font-size: 1.5em;
     padding-top: 2px;
-    right: 2px;
+    right: 2px; 
 }
 
-.card .footer-card {
-    height: 20%;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1em;
+.form-footer button {
+    background-color: #f5d338;
+    border: none;
     text-transform: uppercase;
-}
-.card1 .footer-card {
-    background-color: #f3c70f;
-}
-.card2 .footer-card {
-    background-color: #24be64;
-}
+    width: 12vw;
+    height: 6vh;
+} 
 
-.card3 .footer-card {
-    background-color: #eb5b4d;
+#hotel:target ~ .hotel {
+   display: block;
 }
 
+#hotel:target ~ .car {
+   display: none;
+}
+
+#car:target ~ .car {
+   display: block;
+}
+
+#car:target ~ .hotel {
+   display: none;
+}
 
 
+ 
