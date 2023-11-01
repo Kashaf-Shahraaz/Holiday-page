@@ -603,7 +603,7 @@ input:focus, select:focus {
     .add-inf {
         width: 90%;
     }
-    
+
     .img-bg {
         height: 76%;
     }
@@ -649,11 +649,11 @@ input:focus, select:focus {
         height: 30vh;
      }
 
-     .trevel-card figcaption p {
+    .trevel-card figcaption p {
         font-size: 0.9em;
     }
     
-     .travel-footer {
+    .travel-footer {
         width: 85%;
      }
     
@@ -694,6 +694,185 @@ input:focus, select:focus {
         height: 10vh;
      }
  }
+
+  @media only screen and (max-width: 992px) {
+    header {
+        height: 7vh;
+    }
+
+    .logo {
+        font-size: 1.7em;
+    }
+
+    .header-nav {
+        margin-left: 0;
+    }
+
+    .header-list {
+        font-size: 0.9em;
+    }
+    
+    .header-list li a {
+        padding: 0 4vw 1vh 4vw;
+    }
+
+    .carousel {
+        height: 24vh;
+    }
+
+    .carousel-item  {
+        font-size: 1.5em;
+    }
+    
+    .carousel-item p {
+        padding-bottom: 1vh;
+    }
+    
+    .learn-more {
+        height: 4vh;
+        width: 20vw;
+    }
+
+    .learn-more p {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sl-btn  {
+        display: inline;
+        opacity: 1;
+        font-size: 1.5em;
+    }
+    
+    .left-btn {
+        left: calc(16% - 100px);
+        z-index: 1;
+    }
+    
+    .right-btn { 
+        right: calc(16% - 100px);
+    }
+    
+    .main-section {
+        height: 90vh;  
+        padding-bottom: 6vh;
+    }
+    
+    .add-inf {
+        width: 90%;
+        top: -3%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card, .tabs {
+        width: 42vw;
+        height: 45%;
+    }
+
+    .img-bg {
+        height: 80%;
+    }
+
+    .card .footer-card {
+        height: 20%;
+    }
+
+    .tab > label {
+        height: 14%;
+    }
+    
+    .tab-content {
+        height: 86%;
+    }
+    
+    .form-content {
+        height: 76%;
+        gap: 28px;
+    }
+    
+    .form-footer {
+        height: 24%;
+    }
+    
+    .date-wrap, select {
+        width: 80%;
+        height: 36px;
+    }
+    
+    input {
+        height: 100%;
+    }
+    
+    .form-footer button {
+        width: 16vw;
+        height: 4vh;
+    }
+
+    .line {
+        width: 14vh;
+     }
+    
+    .middle-line {
+        width: 48vw;
+        font-size: 2.5em;
+        text-align: center;
+        padding: 2vh 5vw 0 5vw;
+     }
+
+     .trevel-cards {
+        width: 90%;
+        flex-wrap: wrap;
+        padding: 0 7%;
+        gap: 3vh;
+        padding-bottom: 4vh;
+     }
+
+    .trevel-card {
+        width: 42%;
+        height: 30vh;
+    }
+    
+    .trevel-card figure img {
+        height: 100%;
+    }
+
+    .travel-footer {
+        width: 78%;
+     }
+
+     .popular-heading {
+        padding-top: 8vh;
+     }
+    
+     .popular-heading .line {
+        width: 20vw;
+     }
+    
+     .popular-heading .middle-line {
+        width: 48vw;
+        padding: 0 8vw;
+     }
+    
+     .popular-card {
+        height: 20vh;
+        width: 84%;
+     }
+    
+     .popular-card figcaption {
+        font-size: 1em;
+     }
+
+     .popular-card .card-links {
+        height: 5vh;
+     }
+
+     .footer {
+        height: 5vh;
+     }
+  }
 
  @media only screen and (max-width: 600px) {
 
