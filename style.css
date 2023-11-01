@@ -30,6 +30,7 @@ header {
     height: 9vh;
     width: 100%;
 }
+
 .header-nav {
    display: flex;
    justify-content: space-around;
@@ -67,7 +68,6 @@ header {
 .header-list li:hover {
     background-color: var(--yellow);
 }
-
 
 .header-list li:hover a {
     color: black;
@@ -279,7 +279,6 @@ header {
 	z-index: 1;
 	opacity: 1;
 }
-
 
 form {
     height: 100%;
@@ -571,10 +570,132 @@ input:focus, select:focus {
     display: none;
  }
 
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 1024px) {
     header {
         height: 14vh;
     }
+
+    .header-nav {
+        margin-left: -4vw;
+    }
+
+    .header-list {
+        font-size: 1.3em;
+    }
+
+    .carousel-item  {
+        font-size: 1.7em;
+    }
+    
+    .carousel-item p {
+        padding-bottom: 4vh;
+    }
+    
+    .learn-more {
+        height: 8vh;
+        width: 14vw;
+    }
+    
+    .main-section {
+        height: 60vh;
+    }
+    
+    .add-inf {
+        width: 90%;
+    }
+    
+    .img-bg {
+        height: 76%;
+    }
+    
+    .card .footer-card {
+        height: 24%;
+    }
+    
+    .tab > label {
+        height: 14%;
+    }
+    
+    .tab-content {
+        height: 86%;
+    }
+    
+    .form-content {
+        height: 72%;
+        gap: 20px;
+    }
+    
+    .form-footer {
+        height: 28%;
+    }
+
+    .line {
+        width: 32vh;
+     }
+    
+    .middle-line {
+        font-size: 2.2em;
+     }
+    
+     .trevel-cards {
+        width: 90%;
+     }
+    
+     .trevel-card {
+        height: 65vh;
+     }
+    
+    .trevel-card figure img {
+        height: 30vh;
+     }
+
+     .trevel-card figcaption p {
+        font-size: 0.9em;
+    }
+    
+     .travel-footer {
+        width: 85%;
+     }
+    
+     .popular {
+        width: 90%;
+     }
+    
+     .popular-heading {
+        padding-top: 12vh;
+     }
+    
+     .popular-heading .line {
+        width: 18vw;
+     }
+    
+     .popular-heading .middle-line {
+        width: 50vw;
+        font-size: 2.2em;
+        padding: 0;
+     }
+    
+     .popular-list {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+     }
+    
+     .popular-card {
+        height: 38vh;
+        width: 64%;
+     }
+    
+     .popular-card figcaption {
+        font-size: 0.9em;
+     }
+    
+     .footer {
+        height: 10vh;
+     }
+ }
+
+ @media only screen and (max-width: 600px) {
 
     .header-nav {
          justify-content: space-between;
@@ -612,5 +733,186 @@ input:focus, select:focus {
         width: 100%;
         padding: 1vh 3vw;
      }
-    
- }
+
+    .carousel {
+        height: 20vh;
+    }
+
+    .carousel-item {
+        font-size: 0.7rem;
+    }
+
+    .learn-more {
+        height: 4vh;
+        width: 28vw;
+        padding: 1vh;
+        font-size: 0.7rem;
+    }
+
+    .sl-btn  {
+        display: inline;
+        opacity: 1;
+        font-size: 1.5em;
+    }
+    .left-btn {
+        left: calc(16% - 50px);
+    }
+
+    .right-btn { 
+        right: calc(16% - 50px);
+    }
+
+        
+    .add-inf {
+        flex-direction: column;
+        align-items: center;
+        gap: 5vw;
+        padding-top: 2vh;
+        width: 90%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .img-bg {
+        height: 40vh;
+    }
+
+    .card .footer-card {
+        height: 30vh;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+
+    .card2 .footer-card {
+        background-color: #24be64;
+    }
+
+    .card3 .footer-card {
+        background-color: #eb5b4d;
+    }
+
+    .tabs {
+        position: relative;
+        display: flex;
+        width: 27vw;
+        height: 90%;
+        overflow: hidden;
+    }
+
+    .tab {
+        flex: 1;
+    }
+
+    .tab > label {
+        height: 16%;
+        width: 100%;
+        background-color: #f3c70f;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        transition:  background-color 0.5s ease;
+    }
+
+    .tab label:hover {
+        background-color: #e9d99a;
+    }
+
+    .tab-content {
+        position: absolute;
+        height: 84%;
+        width: 100%;
+        top: calc(16% = 10px);
+        left: 0;
+        opacity: 0;
+    }
+
+    .tab [type=radio] { 
+        display: none; 
+    }
+
+    [type=radio]:checked ~ label {
+        background: white;
+        z-index: 2;
+    }
+
+    [type=radio]:checked ~ label ~ .tab-content {
+        z-index: 1;
+        opacity: 1;
+    }
+
+
+    form {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+    }
+
+    form, .form-content, .form-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-content {
+        position: absolute;
+        top: 0;
+        height: 76%;
+        width: 100%;
+        gap: 28px;
+    }
+
+    .form-footer {
+        position: absolute;
+        bottom: 0;
+        height: 24%;
+        width: 100%;
+        background-color: #f3c70f;
+    }
+
+    .date-wrap {
+        width: 100%;
+        position: relative;
+    }
+
+    .date-wrap, select {
+        width: 70%;
+        height: 30px;
+    }
+
+    input {
+        width: 100%;
+        height: 30px;
+    }
+
+    input:focus, select:focus {
+        outline: 2px solid #e9d99a;;
+    }
+
+    .date-wrap label {
+        position: absolute;
+        height: 30px;
+        font-size: 1.5em;
+        padding-top: 2px;
+        right: 2px; 
+    }
+
+
+
+    .form-footer button {
+        background-color: #f5d338;
+        border: none;
+        text-transform: uppercase;
+        width: 12vw;
+        height: 6vh;
+    }
+}
