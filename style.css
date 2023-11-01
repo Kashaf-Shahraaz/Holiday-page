@@ -538,7 +538,6 @@ input:focus, select:focus {
     align-self: self-end;
  }
 
-
  .footer {
     height: 7vh;
     width: 100%;
@@ -549,3 +548,69 @@ input:focus, select:focus {
     align-items: center;
  }
 
+ .btn-icon {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 4vh;
+    right: 5vw;
+    padding-bottom: 2vh;
+ }
+
+ .btn-icon span {
+    height: 5px;
+    width: 40px;
+    background-color: #f3c70f;
+    display: block;
+    margin: 5px 0px 5px 0px;
+    transition: 0.7s ease-in-out;
+    transform: none;
+ }
+
+ .header-nav input {
+    display: none;
+ }
+
+ @media only screen and (max-width: 600px) {
+    header {
+        height: 14vh;
+    }
+
+    .header-nav {
+         justify-content: space-between;
+         padding-left: 10vw;
+    }
+
+    .header-list {
+        display: none;
+    }
+
+    .btn-icon {
+        display: block;
+    }
+
+    #menu:checked ~ .header-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 12vh;
+        right: 5vw;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 3;
+        height: 26vh;
+        width: 38vw;
+     }
+
+     #menu:checked ~ .header-list li a {
+        color: white;
+        width: 100%;
+     }
+     
+     #menu:checked ~ .header-list li {
+        width: 100%;
+        padding: 1vh 3vw;
+     }
+    
+ }
