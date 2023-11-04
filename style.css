@@ -399,7 +399,7 @@ input:focus, select:focus {
 
 .trevel-card figure img {
     width: 100%;
-    height: 100%;
+    height: 20vh;
  }
 
  .trevel-card figcaption {
@@ -843,6 +843,10 @@ input:focus, select:focus {
         width: 78%;
      }
 
+     .popular {
+        padding-bottom: 7vh;
+     }
+
      .popular-heading {
         padding-top: 8vh;
      }
@@ -874,11 +878,14 @@ input:focus, select:focus {
      }
   }
 
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 668px) {
+    header {
+        height: 12vh;
+    }
 
     .header-nav {
          justify-content: space-between;
-         padding-left: 10vw;
+         padding-left: 6vw;
     }
 
     .header-list {
@@ -887,20 +894,26 @@ input:focus, select:focus {
 
     .btn-icon {
         display: block;
+        position: fixed;
+        z-index: 7;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 10px;
+        top: 10px;
     }
 
     #menu:checked ~ .header-list {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        position: absolute;
-        top: 12vh;
+        position: fixed;
+        top: 10vh;
         right: 5vw;
         background-color: rgba(0, 0, 0, 0.8);
+        font-size: 0.9em;
         z-index: 3;
         height: 26vh;
-        width: 38vw;
+        width: 40vw;
+        z-index: 7
      }
 
      #menu:checked ~ .header-list li a {
@@ -941,157 +954,100 @@ input:focus, select:focus {
         right: calc(16% - 50px);
     }
 
-        
+    .main-section{
+        height: 230vh;
+    }
+
     .add-inf {
+        width: 90%;
+        top: 0;
+    }
+
+    .card, .tabs {
+        height: 60vh;
+        width: 100%;
+    }
+
+    .form-footer button {
+        width: 32vw;
+        height: 4vh;
+    }
+
+    .travel-heading,  .popular-heading {
+        display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 5vw;
-        padding-top: 2vh;
         width: 90%;
     }
 
-    .card {
+    .line, .popular-heading .line {
         width: 100%;
-    }
-
-    .img-bg {
-        height: 40vh;
-    }
-
-    .card .footer-card {
-        height: 30vh;
-        color: white;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 1em;
-        text-transform: uppercase;
-    }
-
-    .card2 .footer-card {
-        background-color: #24be64;
-    }
-
-    .card3 .footer-card {
-        background-color: #eb5b4d;
-    }
-
-    .tabs {
-        position: relative;
-        display: flex;
-        width: 27vw;
-        height: 90%;
-        overflow: hidden;
-    }
-
-    .tab {
-        flex: 1;
-    }
-
-    .tab > label {
-        height: 16%;
-        width: 100%;
-        background-color: #f3c70f;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        text-transform: uppercase;
-        font-weight: bold;
-        cursor: pointer;
-        transition:  background-color 0.5s ease;
-    }
-
-    .tab label:hover {
-        background-color: #e9d99a;
-    }
-
-    .tab-content {
-        position: absolute;
-        height: 84%;
-        width: 100%;
-        top: calc(16% = 10px);
-        left: 0;
-        opacity: 0;
-    }
-
-    .tab [type=radio] { 
-        display: none; 
-    }
-
-    [type=radio]:checked ~ label {
-        background: white;
-        z-index: 2;
-    }
-
-    [type=radio]:checked ~ label ~ .tab-content {
-        z-index: 1;
-        opacity: 1;
-    }
-
-
-    form {
-        height: 100%;
-        width: 100%;
-        background-color: white;
-    }
-
-    form, .form-content, .form-footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .form-content {
-        position: absolute;
-        top: 0;
-        height: 76%;
-        width: 100%;
-        gap: 28px;
-    }
-
-    .form-footer {
-        position: absolute;
-        bottom: 0;
-        height: 24%;
-        width: 100%;
-        background-color: #f3c70f;
-    }
-
-    .date-wrap {
-        width: 100%;
-        position: relative;
-    }
-
-    .date-wrap, select {
-        width: 70%;
-        height: 30px;
-    }
-
-    input {
-        width: 100%;
-        height: 30px;
-    }
-
-    input:focus, select:focus {
-        outline: 2px solid #e9d99a;;
-    }
-
-    .date-wrap label {
-        position: absolute;
-        height: 30px;
+     }
+    
+    .middle-line, .popular-heading .middle-line {
+        width:100%;
         font-size: 1.5em;
-        padding-top: 2px;
-        right: 2px; 
+        padding: 0 0 3vh 0;
+     }
+
+     .trevel-cards {
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+        gap: 5vh;
+        padding-bottom: 4vh;
+     }
+
+    .trevel-card, .popular-card {
+        width: 75%;
+        height: 60vh;
     }
 
-
-
-    .form-footer button {
-        background-color: #f5d338;
-        border: none;
-        text-transform: uppercase;
-        width: 12vw;
-        height: 6vh;
+    .trevel-cards figure, .trevel-cards figure img,
+    .popular figure, .popular figure img {
+        width: 100%;
+        height: 30vh;
     }
+
+    figcaption {
+        padding-left: 4vw;
+    }
+
+    .date-travel {
+        padding-left: 6vw;
+    }
+
+    .descr {
+        font-size: 0.8em;
+     }
+
+     .popular {
+        justify-content: center;
+        width: 100%;
+     }
+
+     .popular-list {
+        gap: 5vh;
+        width: 90%;
+     }
+    
+      .popular-card {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        align-items: flex-start;
+     }
+
+     .popular-card figcaption {
+        padding: 0 8vw;
+     }
+    
+     .popular-card .card-links {
+        height: 7vh;
+     }
+
+     .footer {
+        height: 10vh;
+        font-size: 0.9rem;
+        text-align: center;
+     }
 }
